@@ -1,0 +1,196 @@
+
+.footer {
+    height: 300px;
+    margin-top: -300px;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    min-width: 320px;
+    background: rgba(34, 34, 34, 1);
+}
+
+.footer > .container {
+    padding-top: 65px;
+}
+
+.footer-label {
+    font: bold 26px 'Century Gothic';
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer-contacts-links {
+    margin: 13px auto 0;
+    font-size: 0;
+    max-width: 141px;
+}
+
+.footer-contacts-links a {
+    height: 55px;
+    line-height: 53px;
+    text-align: center;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+
+}
+
+.footer-contacts-links a img, 
+.footer-contacts-links a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-contacts-links a span {
+    margin-left: 10px;
+    font: 14.04px 'Century Gothic';
+    letter-spacing: 0.05em;
+    margin-top: -2px;
+}
+
+.footer-contacts-links a:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer-contacts-links a:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    font: 11px/16px 'Century Gothic';
+    color: #777777;
+    margin-top: 9px;
+}
+
+.footer-center {
+    position: relative;
+}
+
+.footer-center:before, .footer-center:after {
+    content: '';
+    height: 156px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    top: 6px;
+    position: absolute;
+}
+
+.footer-center:before {
+    left: 30px;
+}
+
+.footer-center:after {
+    right: 30px;
+}
+
+@media screen and (max-width: 1229px) {
+    .footer-center:before {
+        left: 45px;
+    }
+
+    .footer-center:after {
+        right: 45px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .footer {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .footer > .container {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+    .footer-center:before, 
+    .footer-center:after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .footer > .container {
+        padding-bottom: 0;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-bottom .rights {
+        float: left;
+        margin: 0;
+    }
+
+    .footer-bottom br {
+        display: none;
+    }
+
+    .footer-bottom .footer-info {
+        float: right;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer > .container {
+        padding-top: 30px;
+    }
+
+    .footer-contacts {
+        margin-top: 20px;
+    }
+
+    .footer-label {
+        font: bold 18px 'Century Gothic';
+    }
+
+    .footer-contacts-links {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-contacts-links a {
+        display: inline-block;
+        vertical-align: top;
+        min-width: 140px;
+        width: auto;
+    }
+
+    .footer-contacts-links a:not(:last-child) {
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+    .footer-bottom .rights {
+        text-align: center;
+        float: none;
+    }
+
+    .footer-bottom .footer-info {
+        text-align: center;
+        margin-top: 10px;
+        float: none;
+    }
+
+    .footer-bottom br {
+        display: block;
+    }
+
+    .footer-bottom {
+        margin-top: 22px;
+        padding-top: 0;
+        padding-bottom: 25px;
+        border-top: none;
+    }
+}

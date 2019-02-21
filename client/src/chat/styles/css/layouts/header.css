@@ -1,0 +1,74 @@
+
+.header .container {
+    padding-top: 40px;
+}
+
+.header-title {
+    text-transform: uppercase;
+    font: 15px 'Century Gothic';
+    letter-spacing: 0.05em;
+    margin-top: 8px;
+}
+
+.header {
+    font-size: 0;
+}
+
+.header-right {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 65px;
+}
+
+.header-title br {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .header-right {
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .nowrap-sm {
+        display: block;
+        max-width: 65px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .labels-form form {
+        padding-right: 180px;
+    }
+
+    .forums-icons {
+        width: 112px;
+        height: 152px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header .container {
+        padding-top: 75px;
+    }
+
+    .header .col-lg-4:first-child, 
+    .header .col-lg-4:last-child {
+        position: inherit;
+    }
+
+    .header-title br {
+        display: block;
+    }
+
+    .header-right {
+        margin-left: 0;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+}

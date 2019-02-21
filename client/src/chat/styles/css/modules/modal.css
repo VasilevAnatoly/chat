@@ -1,0 +1,101 @@
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=75);
+    opacity: .75;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-dialog {
+    width: 480px;
+    margin: 0 auto;
+    background: #222222;
+    -webkit-box-shadow: 0px 35px 90px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 35px 90px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 35px 90px 0px rgba(0, 0, 0, 0.8);
+    /* padding: 50px 65px 40px; */
+    padding: 30px;
+}
+
+.modal-icon-wrap {
+    padding-bottom: 25px;
+}
+
+.modal-icon-wrap img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 767px) {
+
+    .modal-icon-wrap img {
+        max-height: 60px;
+    }
+
+    .modal-icon-wrap {
+        padding-bottom: 5px;
+    }
+
+    .modal-dialog {
+        width: 290px;
+        padding: 15px 15px 20px;
+    }
+    
+    .small-modal-text {
+        font: 13px/16px 'Century Gothic';
+        margin-top: 10px;
+    }
+
+    .middle-modal-text {
+        font: 14px/16px 'Century Gothic';
+        margin-top: 10px;
+    }
+
+    .middle-modal-text br {
+        display: none !important;
+    }
+
+}
+
+.modal-content {
+    background: #222222;
+    box-shadow: none;
+    border: none;
+}
+
+.small-modal-text {
+    font: 14px/19px 'Century Gothic';
+    letter-spacing: 0.025em;
+    color: #aaaaaa;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.middle-modal-text {
+    font: 16px/24px 'Century Gothic';
+    letter-spacing: 0.025em;
+    color: #aaaaaa;
+    text-align: center;
+    margin-top: 15px;
+}

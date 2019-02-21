@@ -1,0 +1,39 @@
+
+.pagination > li {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.pagination > li:not(:last-child) {
+    margin-right: 18px;
+}
+
+.pagination > li > a, 
+.pagination > li > span {
+    position: relative;
+    float: none;
+    display: block;
+    padding: 0;
+    margin-left: 0;
+    font: bold 18px 'Century Gothic';
+    color: #bbbbbb !important;
+    text-decoration: none;
+    background: none !important;
+    border: none !important;
+}
+
+.pagination > li > a > i {
+    font-size: 32px;
+}
+
+.pagination > li > a:hover, 
+.pagination > li.active > a {
+    color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    .pagination {
+        margin: 10px 0;
+    }
+}

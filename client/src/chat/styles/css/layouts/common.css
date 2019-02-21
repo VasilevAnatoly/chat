@@ -1,0 +1,86 @@
+
+body, html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    padding-bottom: 300px;
+    padding-top: 55px;
+}
+
+@media (min-width: 1230px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .nowrap-md {
+        max-width: 115px;
+        overflow: hidden;
+        display: block;
+        text-overflow: ellipsis;
+    }
+
+    .content {
+        padding-bottom: 0;
+    }
+
+    body, html {
+        min-height: 0;
+        height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .nowrap-sm {
+        display: block;
+        max-width: 65px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .content {
+        padding-top: 15px;
+    }
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    min-width: 320px;
+    min-height: 100%;
+}
+
+.content-block {
+    background: rgba(34, 34, 34, 0.9);
+    margin-top: 25px;
+    padding: 40px 50px 40px;
+    -webkit-box-shadow: 0px 35px 90px 0px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 35px 90px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 35px 90px 0px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 5;
+}
+
+.content-block>:first-child {
+    margin-top: 0px;
+}

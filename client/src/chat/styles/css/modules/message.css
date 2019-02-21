@@ -1,0 +1,67 @@
+
+.message-item {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+
+.user-item {
+    padding-left: 60px;
+    padding-right: 95px;
+    margin-top: 8px;
+    margin-bottom: 8px !important;
+}
+
+.user-item .message-item-text {
+    background: #555555;
+}
+
+.message-item-text {
+    color: #ffffff;
+    font: 15px 'Century Gothic';
+    letter-spacing: 0.025em;
+    padding: 17px 20px;
+    background: #333333;
+}
+
+.message-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.message-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.message-date {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    color: #DDDDDD;
+    font: 15px 'Century Gothic';
+    width: 60px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .message-item {
+        padding-left: 20px;
+        padding-right: 70px;
+    }
+
+    .message-item-text {
+        font: 13px 'Century Gothic';
+        padding: 12px 15px;
+    }
+
+    .message-date {
+        right: 18px;
+        top: 13px;
+        font: 13px 'Century Gothic';
+    }
+
+    .user-item {
+        padding-right: 60px;
+        margin-top: 0px;
+        margin-bottom: 4px !important;
+    }
+}

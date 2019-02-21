@@ -1,0 +1,57 @@
+
+.panel-page {
+    background: url("../../images/bg/not-front-bg.jpg") no-repeat center top;
+    background-color: rgba(17, 17, 17, 1);
+}
+
+.panel-header {
+    background: rgba(17, 17, 17, 0.9);
+    height: 55px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+
+.panel-logo {
+    float: left;
+    display: block;
+    margin-top: 14px;
+}
+
+.panel-logo img {
+    display: block;
+}
+
+.panel-header .container {
+    height: 100%;
+}
+
+.panel-header {
+    font-size: 0;
+}
+
+.panel-content {
+    padding-top: 30px;
+}
+
+.panel-page .content {
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .panel-page .content {
+        padding-top: 55px;
+    }
+
+    .panel-content {
+        padding-top: 20px;
+    }
+
+    .panel-page .content {
+        padding-bottom: 70px;
+    }
+
+}

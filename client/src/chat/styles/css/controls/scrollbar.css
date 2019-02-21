@@ -1,0 +1,26 @@
+
+.scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar {
+    height: 4px;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x {
+    bottom: 0;
+    height: 4px;
+    border-radius: 2px !important;
+    overflow: hidden;
+}
+
+.scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer, 
+.scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer {
+    height: 4px;
+    min-height: 4px;
+}
+
+.scrollbar-dynamic > .scroll-element .scroll-bar {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.scrollbar-dynamic > .scroll-element .scroll-element_size {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    opacity: 1 !important;
+}

@@ -1,0 +1,14 @@
+
+.alert {
+    z-index: 99999;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    border-radius: 0;
+    background-color: rgba(34, 34, 34, 1);
+    border-color: rgba(34, 34, 34, 0.9);
+    color: #fff;
+    box-shadow: 0 35px 90px 0 rgba(0, 0, 0, 0.8);
+}

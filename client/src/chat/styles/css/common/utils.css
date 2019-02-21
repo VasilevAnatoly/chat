@@ -1,0 +1,48 @@
+
+.clear {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    color: transparent !important;
+}
+
+[placeholder]:focus:-moz-placeholder {
+    color: transparent !important;
+}
+
+[placeholder]:focus::-moz-placeholder {
+    color: transparent !important;
+}
+
+[placeholder]:focus:-ms-input-placeholder {
+    color: transparent !important;
+}
+
+.rights {
+    font: 14.05px 'Century Gothic';
+    letter-spacing: 0.05em;
+    color: #aaaaaa;
+    margin-top: 26px;
+}
+
+.anim-style {
+    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cleared {
+    clear: both;
+}

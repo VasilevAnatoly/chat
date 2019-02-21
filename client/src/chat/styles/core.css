@@ -1,0 +1,348 @@
+@import url('./css/bootstrap.css');
+@import url('./css/custom.css');
+@import url('./css/vendor/index.css');
+@import url('./css/font-awesome-4.5.0/css/font-awesome.css');
+@import url('./fonts/stylesheet.css');
+@import url('./css/content/index.css');
+@import url('./css/controls/index.css');
+@import url('./css/layouts/index.css');
+@import url('./css/modules/index.css');
+@import url('./css/pages/index.css');
+@import url('./css/common/transform.css');
+@import url('./css/common/utils.css');
+@import url('./css/main.css');
+
+html body div#react {
+    height: 100%;
+}
+
+.close-panel-button {
+    float: right;
+    padding: 0px;
+    border: none;
+    background: none;
+    min-width: 40px;
+}
+
+.drag-box {
+    cursor: move;
+}
+
+.no-cursor {
+    cursor: auto;
+}
+
+.closed {
+    opacity: 0.0;
+    width: 0px;
+}
+
+.editor-box-body-expand {
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.editor-drag {
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    z-index: -10;
+}
+
+.editor-drag:hover {
+    opacity: 1.0;
+}
+
+.editor-tool {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.editor-tool-expand {
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.editor-box {
+    position: fixed;
+    top: 45px;
+    right: 55px;
+    z-index: 1;
+}
+
+.editor-box-body {
+    width: 50px;
+    border-radius: 26px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.frame-editor {
+    width: 100%;
+    height: 100%;
+    border: none;
+    min-height: 100%;
+    display: block;
+}
+
+.bootstrap-datetimepicker-widget div {
+	cursor: default;
+}
+
+.chat-message-image {
+    display: inline;
+    position: relative;
+}
+
+.chat-message-image.attach {
+    display: inline-block;
+    position: relative;
+}
+
+
+.chat-message-image>* {
+    transition: all 0.35    s;
+}
+
+.chat-message-image>img {
+    padding: 2px;
+    cursor: zoom-in;
+}
+
+.chat-message-image>img:hover {
+    transform: scale(1.07);
+}
+
+.chat-message-img {
+    cursor: default !important;
+    position: fixed;
+    max-height: 80vh;
+    max-width: 80vw;
+    z-index: 100001;
+    margin:auto;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    opacity: 0.0;
+}
+
+.chat-message-img-open {
+    width: auto;
+    opacity: 1.0;
+}
+.chat-message-img:hover {
+    transform: none !important;
+}
+
+.overlayd-page {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    background: rgba(34,45,50,0.5);
+    z-index: 100000;
+}
+
+.overlayd-page .closed-button {
+    position: fixed;
+    right: 10vw;
+    top: 10vh;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.chat-message-img-closed-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 2px;
+    z-index: 99999;
+    color: #19171a;
+}
+
+.image-editor-container {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid rgba(3,14,82,.92);
+    top: 0;
+    left: 0;
+    display: none;
+    font-size: 0;
+}
+
+.image-editor-container * {
+    box-sizing: border-box
+}
+
+.image-editor-container>span {
+    /* opacity:0; */
+    transition: opacity .2s linear;
+    left: 50%;
+    top: 50%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    width: 70px;
+    margin-left: -35px;
+    margin-top: -12px;
+    text-align: center;
+    overflow: visible;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .35);
+    max-width: 100%;
+}
+
+.image-editor-container>i,
+.image-editor-container>span {
+    position: absolute;
+    display: inline-block
+}
+
+.image-editor-container>i {
+    z-index: 4;
+    pointer-events: all;
+    border: 1px solid rgba(3, 14, 82, .92);
+    background-color: hsla(0, 0%, 88%, .99);
+    width: 10px;
+    height: 10px
+}
+
+.image-editor-container>i:hover {
+    background-color: #f8f8f8
+}
+
+.image-editor-container>i:first-child {
+    left: -5px;
+    top: -5px;
+    cursor: nw-resize
+}
+
+.image-editor-container>i:nth-child(2) {
+    right: -5px;
+    top: -5px;
+    cursor: ne-resize
+}
+
+.image-editor-container>i:nth-child(3) {
+    right: -5px;
+    bottom: -5px;
+    cursor: se-resize
+}
+
+.image-editor-container>i:nth-child(4) {
+    left: -5px;
+    bottom: -5px;
+    cursor: sw-resize
+}
+
+.image-editor-container .popover-content {
+    padding: 0px;
+    min-width: 200px;
+    min-height: 30px;
+}
+
+.expand-editor {
+    z-index: 100001;
+    position: fixed;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    margin:auto;
+    max-height: 500px;
+    max-width: 500px;
+    min-height: 40vh;
+    min-width: 40vw;
+    overflow: hidden;
+}
+
+.expand-editor .form-group {
+    margin-bottom: 10px;
+}
+
+.expand-editor .custom-form-group .form-control {
+    padding: 6px 4px;
+}
+
+.expand-editor .custom-form-group .form-group {
+    display: inline-block;
+    width: calc(50% - 10px);
+}
+
+.expand-editor .custom-form-group-margin .form-control {
+    padding: 6px 4px;
+}
+
+.expand-editor .custom-form-group-margin .form-group {
+    display: inline-block;
+    width: 25%;
+}
+
+.expand-editor .tab-content {
+    padding-top: 10px;
+}
+.switch-lock-tool {
+    width: 20px;
+}
+
+.expand-editor-box {
+    max-height: 500px;
+    max-width: 500px;
+    min-height: 45vh;
+    min-width: 35vw;
+    margin:auto;
+    color: #333;
+}
+
+.expand-editor-box-body {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .image-editor-container>i {
+        width: 20px;
+        height: 20px
+    }
+
+    .image-editor-container>i:first-child {
+        left: -10px;
+        top: -10px;
+        cursor: nw-resize
+    }
+
+    .image-editor-container>i:nth-child(2) {
+        right: -10px;
+        top: -10px;
+        cursor: ne-resize
+    }
+
+    .image-editor-container>i:nth-child(3) {
+        right: -10px;
+        bottom: -10px;
+        cursor: se-resize
+    }
+
+    .image-editor-container>i:nth-child(4) {
+        left: -10px;
+        bottom: -10px;
+        cursor: sw-resize
+    }
+}

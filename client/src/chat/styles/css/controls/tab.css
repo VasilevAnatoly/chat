@@ -1,0 +1,70 @@
+
+.tab-content {
+    padding-top: 30px;
+}
+
+.tab-text {
+    font: 15px/24px 'Century Gothic';
+    color: #dddddd;
+    text-align: left;
+}
+
+.tab-form {
+    margin-top: 25px;
+}
+
+.tab-form .offer-settings-label {
+    margin-bottom: 15px;
+}
+
+.tab-form button {
+    height: 55px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 55px;
+    font-size: 15px;
+    line-height: 47px;
+    width: auto;
+}
+
+.tab-form {
+    padding-bottom: 15px;
+}
+
+.tab-list-title {
+    font: 18px 'Century Gothic';
+    color: #dddddd;
+}
+
+@media screen and (max-width: 991px) {
+
+    .tab-form button {
+        height: 44px;
+        font-size: 13px;
+        line-height: 40px;
+    }
+
+    .tab-text br {
+        display: none;
+    }
+
+    .tab-content {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .tab-text {
+        font: 13px/17px 'Century Gothic';
+        text-align: left;
+    }
+
+    .tab-list-title {
+        font: 15px 'Century Gothic';
+    }
+
+    .tab-content {
+        padding-top: 0px;
+    }
+}

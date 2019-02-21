@@ -1,0 +1,30 @@
+
+input {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+input#linkField {
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+input#linkField:not(.copied):hover {
+    background-color: #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+input#linkField.copied {
+    -webkit-animation: copyEffect 2s;
+    -moz-animation: copyEffect 2s;
+    -ms-animation: copyEffect 2s;
+    -o-animation: copyEffect 2s;
+    animation: copyEffect 2s;
+
+}

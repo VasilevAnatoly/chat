@@ -1,0 +1,71 @@
+
+@media screen and (max-width: 991px) {
+
+    .transform-sm table,
+    .transform-sm thead,
+    .transform-sm tbody,
+    .transform-sm th,
+    .transform-sm td,
+    .transform-sm tr {
+        display: block;
+    }
+
+    .transform-sm thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .transform-sm tr {
+        border: 1px solid rgba(223, 218, 225, 0.3);
+        margin-bottom: 10px;
+    }
+
+    .transform-sm tr td:first-child {
+        border-top: 1px solid rgba(223, 218, 225, 0.3);
+    }
+
+    .transform-sm td {
+        border: none;
+        border-bottom: 1px solid rgba(223, 218, 225, 0.3);
+        border-left: 1px solid rgba(223, 218, 225, 0.3);
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    .transform-sm td:hover {
+        background: rgba(17, 17, 17, 0.65);
+    }
+
+    .transform-sm td:before {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 6px;
+        width: 45%;
+        padding-right: 0;
+        padding-left: 13px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        line-height: 37px;
+    }
+
+    .transform-sm td:before {
+        content: attr(data-title);
+    }
+
+    .transform-sm tbody tr:nth-child(2n), .transform-sm tbody tr:nth-child(2n):hover {
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .transform-sm td:last-child, .transform-sm th:last-child {
+        border-right: 1px solid rgba(223, 218, 225, 0.3);
+    }
+
+    .transform-sm tbody tr:hover {
+        background: transparent !important;
+    }
+}

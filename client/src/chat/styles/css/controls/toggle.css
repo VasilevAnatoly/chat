@@ -1,0 +1,42 @@
+
+.toggle-search {
+    font: 13px 'Century Gothic';
+    color: #666666 !important;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.toggle-search.active i {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.toggle-search:hover {
+    color: #fff !important;
+}
+
+.toggle-search span {
+    display: none;
+}
+
+.toggle-search span.active {
+    display: initial;
+}
+
+.toggle-search i {
+    -webkit-transition: transform 0.25s ease-in-out;
+    -moz-transition: transform 0.25s ease-in-out;
+    -ms-transition: transform 0.25s ease-in-out;
+    -o-transition: transform 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+
+    .toggle-search {
+        margin-top: 2px;
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "name": "partner",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "migrate": "migrate-mongo -f ./server/database/migrations/config.js",
+        "generate": "node ./server/database/generateData",
+        "generateDefault": "node ./server/database/generateData/generateDefault.js",
+        "progress": "webpack --colors --progress --watch",
+        "serve": "serve ./public",
+        "build-debug": "set NODE_ENV=development && nodemon --debug --inspect-brk=5858 start.js",
+        "build": "set NODE_ENV=development && nodemon start.js",
+        "prod": "set NODE_ENV=production && node start.js",
+        "start": "set NODE_ENV=development && node start.js",
+        "debug": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --progress --content-base public"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-register": "^6.26.0",
+        "body-parser": "^1.18.3",
+        "buffer-split": "^1.0.0",
+        "compression": "^1.7.2",
+        "cookie-parser": "^1.4.3",
+        "cors": "*",
+        "debug": "^3.1.0",
+        "event-stream": "^4.0.1",
+        "express": "^4.16.3",
+        "express-session": "latest",
+        "express-useragent": "^1.0.4",
+        "helmet": "^3.12.0",
+        "mkdirp": "^0.5.1",
+        "mongoose": "^5.2.9",
+        "mongoose-id-validator": "^0.4.3",
+        "morgan": "^1.9.0",
+        "querystring": "^0.2.0",
+        "save": "^2.3.2",
+        "serve-favicon": "^2.5.0",
+        "socket.io": "^2.1.1",
+        "useragent": "^2.1.9",
+        "winston": "latest"
+    },
+    "devDependencies": {
+        "connect-mongo": "^1.3.2",
+        "express-form-data": "^2.0.6",
+        "nodemon": "^1.18.3"
+    }
+}

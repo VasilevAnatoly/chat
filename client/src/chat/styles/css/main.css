@@ -1,0 +1,277 @@
+
+.main-title {
+    text-align: right;
+    color: #d4ced3;
+    margin-top: 40px;
+    font: 17px 'Century Gothic';
+}
+
+.main-title a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+
+.main-title a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.main .container {
+    padding-bottom: 50px;
+}
+
+.main-nav {
+    float: right;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.main-nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.main-nav > ul > li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.main-nav > ul > li a {
+    color: #bbbbbb;
+    font: bold 14px/55px 'Century Gothic';
+    display: block;
+    letter-spacing: 0.025em;
+}
+
+.main-nav > ul > li > a:hover, 
+.main-nav > ul > li.active > a {
+    color: #fff !important;
+}
+
+.main-nav > ul > li.active > a {
+    -webkit-box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.main-nav > ul ul {
+    list-style: none;
+    position: absolute;
+    padding: 15px 0;
+    margin: 0;
+    background: rgb(238, 238, 238);
+    top: 100%;
+    left: -30px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    transform: translateX(-5px);
+}
+
+.main-nav > ul > li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.main-nav > ul ul > li {
+    display: block;
+}
+
+.main-nav > ul ul > li:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.main-nav > ul ul > li a {
+    color: #666666;
+    font: 14px 'Century Gothic';
+    display: block;
+    padding: 5px 30px;
+    letter-spacing: 0.025em;
+    position: relative;
+}
+
+.main-nav > ul ul > li a span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-nav > ul ul > li a span:before, 
+.main-nav > ul ul > li a span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 0;
+    background: #aaaaaa;
+}
+
+.main-nav > ul ul > li a span:before {
+    left: 100%;
+    margin-left: 10px;
+}
+
+.main-nav > ul ul > li a span:after {
+    right: 100%;
+    margin-right: 10px;
+}
+
+.main-nav > ul ul > li a:hover, 
+.main-nav > ul ul > li.active a {
+    color: #111111 !important;
+}
+
+.main-nav > ul ul > li a:hover span:after, 
+.main-nav > ul ul > li.active a span:after,
+.main-nav > ul ul > li a:hover span:before, 
+.main-nav > ul ul > li.active a span:before {
+    width: 200px;
+}
+
+.main-nav > ul ul > li a span:before, 
+.main-nav > ul ul > li a span:after, 
+.main-nav > ul ul, 
+.main-nav, {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .main-nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 300;
+        padding: 50px 60px 50px 50px;
+        white-space: nowrap;
+        text-align: right;
+        background: #222222;
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: hidden;
+    }
+
+    .main-nav.active {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .main-nav ul li {
+        display: block;
+    }
+
+    .main-nav > ul > li a {
+        color: #bbbbbb;
+        font: bold 14px 'Century Gothic';
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+        display: block;
+        letter-spacing: 0.025em;
+    }
+
+    .main-nav > ul ul {
+        position: relative;
+        padding: 0;
+        margin-top: 10px;
+        background: transparent;
+        top: 0;
+        left: initial;
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .main-nav > ul ul > li a {
+        padding: 0;
+    }
+
+    .main-nav > ul ul > li a:hover {
+        color: #fff !important;
+    }
+
+    .main-nav > ul ul > li a span:before, 
+    .main-nav > ul ul > li a span:after {
+        display: none !important;
+    }
+
+    .main-nav li:not(:last-child) {
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .main-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .main-title {
+        font: 15px 'Century Gothic';
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .main-title {
+        font: 13px 'Century Gothic';
+    }
+
+    .main-title {
+        font: 13px/22px 'Century Gothic';
+    }
+}
+
+@media screen and (max-height: 400px) and (orientation: landscape) {
+    .main-nav li:not(:last-child) {
+        margin-bottom: 4px !important;
+    }
+
+    .main-nav > ul ul {
+        margin-top: 4px;
+    }
+
+    .main-nav {
+        padding: 15px 60px 25px 50px;
+    }
+}
+
+.main-nav.active {
+    z-index: 999 !important;
+}
